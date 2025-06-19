@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Form</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form id="contactForm" action="https://formsubmit.co/okemdinach383@gmail.com" method="POST" enctype="multipart/form-data" target="_blank">
+            <input type="hidden" name="_captcha" value="True">
+            <input type="hidden" name="_next" value="Thankyou.html">
+
+            <label for="Fullname">Enter Your Full Name<span class="required_star"></span></label><br>
+            <input type="text" name="Fullname" placeholder="Fiona Wilson" required><br><br>
+
+            <label for="email"> Enter Your Email Address<span class="required-star"></span></label><br>
+            <input type="email" name="email" placeholder="abc123@gmail.com" required><br><br>
+
+            <label for="Number"> Enter Your Phone Number<span class="required-star"></span></label><br>
+            <input type="tel" name="Number" placeholder="+2341234567890" required><br><br>
+
+            <label> Select Your Gender </label><br>
+            <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Male">Male</label><br>
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label><br><br>
+
+            <label> Select Your Interests (You can select more than one) <span class="required-star"></span></label><br>
+            <input type="checkbox" id="Tech" name="Interests" value="Tech">
+            <label for="Tech">Technology</label><br>
+            <input type="checkbox" id="Writing" name="Interests" value="Writing">
+            <label for="Writing"> Writing </label><br>
+            <input type="checkbox" id="Law" name="Interests" value="Law">
+            <label for="Law"> Law </label><br><br>
+
+            <label for="rating"> Rate Past Work Experience Out Of 5<span class="required-star"></span></label><br>
+            <select name="rating" id="rating" required>
+                <option value="" disabled selected> Click to Rate </option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select><br><br>
+
+            <label for="Message"> Tell us something we should know beforehand (Optional)</label><br>
+            <textarea id="Message" name="Message" rows="4" placeholder="Enter Text here..."></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
